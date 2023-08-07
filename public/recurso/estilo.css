@@ -82,6 +82,12 @@
     padding: 10px 20px;
     background-color: thistle;
 }
+
+.modulo > ul > li:active {
+    background-color: #878385;
+    box-shadow: 0px 2px 5px #878385;
+    transform: translateY(2px);
+}
 .modulo > ul {
     margin: 0px;
     padding: 10px;
