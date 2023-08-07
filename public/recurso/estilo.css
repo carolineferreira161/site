@@ -1,0 +1,106 @@
+* {
+    font-family: 'Oswald' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+ 
+ body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
+ }
+ .conteudo{
+    position: relative;
+    height: 100%;
+    background-color: rgb(19, 19, 24);
+    padding: 20px;
+   
+}
+ .cabecalho {
+    grid-area: cabecalho;
+    background-color: rgba(5, 5, 5, 0.956);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    box-shadow: 0px 4px 15px -2px rgba(11, 11, 11, 0.174);
+ }
+.cabecalho > h1{
+    margin: 0px;
+    font-weight: 100;
+    font-size: 2.2rem;
+}
+.cabecalho > h2{
+    margin: 0px;
+    font-weight: 150;
+    font-size: 1.5rem;
+}
+
+.principal {
+    grid-area: principal;
+    /*height: calc(100vh - 180px);*/
+    background-color: white;
+    color: white;
+    padding: 20px;
+}
+.rodape {
+    grid-area: rodape;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    background-color: rgba(59, 58, 58, 0.181);
+    padding-right: 25px;
+    position: sticky;
+    bottom: 0px;
+    height:25px;
+}
+.modulos {
+    display: flex;/*todos na mesma linha*/
+    flex-wrap: wrap;/*p quebrar linha*/
+    justify-content: space-around;/*espaço entre os elementos*/
+}
+.modulo {
+    flex-basis: 32%;/*tamanho do elemento*/
+    border:2px solid rgba(28, 27, 27, 0.468);
+    margin:5px;
+    border-radius:5px;
+}
+.modulo > h3 {
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: thistle;
+}
+.modulo > ul {
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+.modulo > ul > li {
+    padding: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.modulo > ul > li > a {
+   display: flex;
+   text-decoration: none;
+   color: rgb(87, 77, 82);
+}
+.modulo > ul > li:hover{
+    background-color: gray;
+    border-radius:5px;
+ }
+ 
+ .modulo > h3 {background-color: rgba(196, 42, 68, 0.701);}
+ 
